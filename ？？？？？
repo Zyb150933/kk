@@ -1,0 +1,94 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("原作者:620tig2V 汉化师傅:1972845799 造船寻宝历史活动传送脚本", "Synapse")
+
+-- MAIN
+local Main = Window:NewTab("不需要传送")
+local MainSection = Main:NewSection("不需要传送")
+
+
+MainSection:NewButton("面包(不可互动)(威胁较小)", "Loads in the fabbie boss (you need to be leader for this to work", function()
+    workspace.QuestMakerEvent:FireServer(100)
+end)
+
+MainSection:NewButton("姜饼人(可互动)(威胁较大)", "Loads in the gingerbread Fight (you need to be leader for this to work", function()
+    workspace.QuestMakerEvent:FireServer(99)
+end)
+
+MainSection:NewButton("雪中小屋(无法互动)(无威胁)", "Loads in the xmas Fight (you need to be leader for this to work", function()
+    workspace.QuestMakerEvent:FireServer(101)
+end)
+
+local Main = Window:NewTab("要传送(可能会出现卡顿)")
+local MainSection = Main:NewSection("要传送(可能会出现卡顿)")
+
+MainSection:NewButton("去往复活节活动(可互动)(需要打BOSS)", "Takes you to the Inner-Cloud", function()    
+    local plr = game.Players.LocalPlayer;
+local Char = game.Players.LocalPlayer.Character;
+local Teleporting = game:GetService("TeleportService");
+local CFrameEnd1 = CFrame.new(631, 26, -46);
+local Time1 = 5;
+local tween1 = game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time1), {CFrame = CFrameEnd1});
+local CFrameEnd2 = CFrame.new(484, 68, 270);
+local Time2 = 5;
+local tween2 =  game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time2), {CFrame = CFrameEnd2});
+if game.PlaceId ~= 1930863474 then
+Teleporting:Teleport(1930863474, plr)
+else
+tween1:Play()
+tween1.Completed:Wait(X)
+end
+end)
+
+MainSection:NewButton("前往雪中世界(可互动)(威胁较大)", "Takes you to the Winter Place", function()
+    local plr = game.Players.LocalPlayer;
+local Char = game.Players.LocalPlayer.Character;
+local Teleporting = game:GetService("TeleportService");
+local CFrameEnd1 = CFrame.new(631, 26, -46);
+local Time1 = 5;
+local tween1 = game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time1), {CFrame = CFrameEnd1});
+local CFrameEnd2 = CFrame.new(484, 68, 270);
+local Time2 = 5;
+local tween2 =  game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time2), {CFrame = CFrameEnd2});
+if game.PlaceId ~= 1930866268 then
+Teleporting:Teleport(1930866268, plr)
+else
+tween1:Play()
+tween1.Completed:Wait(X)
+end
+end)
+
+MainSection:NewButton("传送至下水道(会被强制遣返)", "Takes you to the The Secret Place", function()
+    local plr = game.Players.LocalPlayer;
+local Char = game.Players.LocalPlayer.Character;
+local Teleporting = game:GetService("TeleportService");
+local CFrameEnd1 = CFrame.new(631, 26, -46);
+local Time1 = 5;
+local tween1 = game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time1), {CFrame = CFrameEnd1});
+local CFrameEnd2 = CFrame.new(484, 68, 270);
+local Time2 = 5;
+local tween2 =  game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time2), {CFrame = CFrameEnd2});
+if game.PlaceId ~= 1930665568 then
+Teleporting:Teleport(1930665568, plr)
+else
+tween1:Play()
+tween1.Completed:Wait(X)
+end
+end)
+
+MainSection:NewButton("已无法传送", "Takes you to the Chamber Of Zeg", function()
+    local plr = game.Players.LocalPlayer;
+local Char = game.Players.LocalPlayer.Character;
+local Teleporting = game:GetService("TeleportService");
+local CFrameEnd1 = CFrame.new(631, 26, -46);
+local Time1 = 5;
+local tween1 = game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time1), {CFrame = CFrameEnd1});
+local CFrameEnd2 = CFrame.new(484, 68, 270);
+local Time2 = 5;
+local tween2 =  game:GetService("TweenService"):Create(Char.HumanoidRootPart, TweenInfo.new(Time2), {CFrame = CFrameEnd2});
+if game.PlaceId ~= 5266993598 then
+Teleporting:Teleport(5266993598, plr)
+else
+tween1:Play()
+tween1.Completed:Wait(X)
+end
+end)
