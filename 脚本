@@ -39,22 +39,22 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/nJJPrp2w"))()
-local Window = OrionLib:MakeWindow({Name = "🥂迷你世界脚本🥂", HidePremium = false, IntroText = "🥂迷你世界脚本🥂"})
+local Window = OrionLib:MakeWindow({Name = "🥂钢筋脚本🥂", HidePremium = false, IntroText = "🥂钢筋脚本🥂"})
 
 local about = Window:MakeTab({
     Name = "公告",
-    Icon = "rbxassetid://12166899359",
+    Icon = "rbxassetid://15905575484",
     PremiumOnly = false
 })
 
 about:AddParagraph("永远免费")
-about:AddParagraph("Q:3532474815")
-about:AddParagraph("作者:林")
-about:AddParagraph("Q群:311918922")
+about:AddParagraph("Q:2279503203")
+about:AddParagraph("作者:做断你的钢筋")
+about:AddParagraph("后期会更新 欢迎使用🥂")
 
 local Tab = Window:MakeTab({
-	Name = "🥂通用",
-	Icon = "rbxassetid://",
+	Name = "通用",
+	Icon = "rbxassetid://15905575484",
 	PremiumOnly = false
 })
 
@@ -73,7 +73,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-  Name = "光影2",
+  Name = "光影_2",
   Default = false,
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
@@ -258,8 +258,8 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "🥂玩家",
-	Icon = "rbxassetid://",
+	Name = "玩家",
+	Icon = "rbxassetid://15905575484",
 	PremiumOnly = false
 })
 
@@ -686,12 +686,39 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({  
-    Name = "脚本",
+    Name = "菜单1",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/AliCode14/scripts/main/ScriptHub.lua"))()
 	end
 })
 
+Tab:AddButton({  
+    Name = "菜单2",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/XRoLLu/UWU/main/Ninja-Legenos.exe.lua"))()--join my discord server:https://discord.gg/dWUdqZUvNB
+	end
+})
+	
+local Tab = Window:MakeTab({
+	Name = "🥂极速传奇",
+	Icon = "rbxassetid://",
+	PremiumOnly = false
+})
+
+Tab:AddButton({  
+    Name = "菜单1",
+	Callback = function()
+	  loadstring(game:HttpGet('https://raw.githubusercontent.com/Zyb150933/kk/main/lllllll'))()
+	end
+})
+
+Tab:AddButton({  
+    Name = "菜单2",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/arlists/Sky-Hub/main/Main", true))()
+	end
+})
+	
 local Tab = Window:MakeTab({
 	Name = "🥂doors",
 	Icon = "rbxassetid://",
@@ -758,7 +785,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({  
-    Name = "脚本",
+    Name = "菜单1",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0SwordWarriors"))()
 	end
@@ -771,26 +798,12 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({  
-    Name = "脚本",
+    Name = "菜单1",
 	Callback = function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/KindIhave/ChibaHuB/main/Chiba-BF.txt'))()
 	end
 })
 
-Tab:AddButton({  
-    Name = "脚本2(可刷级,但有bug)",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()   
-	end
-})
-
-Tab:AddButton({  
-    Name = "脚本3",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Xiao-Yun-UWU/main/%E6%B5%B7%E8%B4%BC%E7%8E%8Bbf.lua", true))()
-	end
-})
-	
 local Tab = Window:MakeTab({
 	Name = "🥂俄亥俄州",
 	Icon = "rbxassetid://",
@@ -914,7 +927,7 @@ Tab:AddButton({
 Tab:AddButton({
   Name = "召唤历史活动",
   Callback = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Zyb150933/kk/main/%EF%BC%9F%EF%BC%9F%EF%BC%9F%EF%BC%9F%EF%BC%9F'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Zyb150933/kk/main/ddddd'))()
   end
 })
 
@@ -936,10 +949,10 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://",
 	PremiumOnly = false
 })
-
 Tab:AddButton({
   Name = "菜单1",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/7190000/Corolla-Hub/main/ch.lua"))()
   end
 })
+  
