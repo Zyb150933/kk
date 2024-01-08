@@ -1036,10 +1036,34 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://",
 	PremiumOnly = false
 })
+
 Tab:AddButton({
   Name = "菜单1",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/7190000/Corolla-Hub/main/ch.lua"))()
   end
 })
-  
+
+local Tab = Window:MakeTab({
+	Name = "🥂监狱人生",
+	Icon = "rbxassetid://",
+	PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "菜单1",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
+  end
+})
+Tab:AddButton({
+  Name = "菜单2",
+  Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/MoonUI-v10-/main/MoonUI%20v10'))()
+  end
+})
+Tab:AddButton({
+  Name = "菜单3",
+  Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/LiverMods/xRawnder/main/HubMoblie'))()
+  end
+})
