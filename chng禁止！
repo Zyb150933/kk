@@ -785,6 +785,31 @@ Tab:AddButton({
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/XRoLLu/UWU/main/Ninja-Legenos.exe.lua"))()--join my discord server:https://discord.gg/dWUdqZUvNB
 	end
 })
+local Tab = Window:MakeTab({
+	Name = "🥂力量传奇",
+	Icon = "rbxassetid://",
+	PremiumOnly = false
+})
+
+Tab:AddButton({  
+    Name = "菜单1",
+	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/littlegui/main/MuscleLegends"))()
+    end
+})
+
+Tab:AddButton({  
+    Name = "菜单2",
+	Callback = function()
+	  loadstring(game:GetObjects("rbxassetid://10048914323")[1].Source)()
+    end
+})
+Tab:AddButton({  
+    Name = "菜单3",
+	Callback = function()
+	  loadstring(game:HttpGet('https://raw.githubusercontent.com/jynzl/main/main/Musclas%20Legenos.lua'))()
+	end
+})
 	
 local Tab = Window:MakeTab({
 	Name = "🥂极速传奇",
@@ -1065,5 +1090,30 @@ Tab:AddButton({
   Name = "菜单3",
   Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/LiverMods/xRawnder/main/HubMoblie'))()
+  end
+})
+
+local Tab = Window:MakeTab({
+	Name = "🥂汽车经销大亨",
+	Icon = "rbxassetid://",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+  Name = "菜单1(点完之后请稍等)",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/nxtcapi/IceWare/main/loader.lua",true))()
+  end
+})
+
+local Tab = Window:MakeTab({
+	Name = "🥂火箭发射模拟器",
+	Icon = "rbxassetid://",
+	PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "挂机农场",
+  Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/dizyhvh/rbx_scripts/main/321_blast_off_simulator')))()
   end
 })
