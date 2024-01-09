@@ -1117,3 +1117,30 @@ Tab:AddButton({
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/dizyhvh/rbx_scripts/main/321_blast_off_simulator')))()
   end
 })
+
+local Tab = Window:MakeTab({
+	Name = "🥂俄亥俄州",
+	Icon = "rbxassetid://",
+	PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "菜单1",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/Ohio.lua", true))()
+
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").BankRobbery.BankCash.Main.CFrame
+-- Bank Tp 
+  end
+})
+Tab:AddButton({
+  Name = "菜单2",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/rxn-xyz/Ohio./main/Ohio.lua",true))()
+  end
+})
+Tab:AddButton({
+  Name = "菜单3",
+  Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
+  end
+})
