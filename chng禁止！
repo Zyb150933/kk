@@ -40,7 +40,7 @@ Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/nJJPrp2w"))()
 local Window = OrionLib:MakeWindow({Name = "🥂钢筋脚本🥂", HidePremium = false, IntroText = "🥂钢筋脚本🥂"})
-
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎使用"; Text ="🥂钢筋脚本🥂"; Duration = 4; })
 local about = Window:MakeTab({
     Name = "公告",
     Icon = "rbxassetid://15905575484",
@@ -48,10 +48,20 @@ local about = Window:MakeTab({
 })
 
 about:AddParagraph("永远免费")
-about:AddParagraph("Q:2279503203")
-about:AddParagraph("作者:做断你的钢筋")
+about:AddParagraph("作者QQ:2279503203 🥂做断你的钢筋🥂 ")
+about:AddParagraph("作者游戏ID:TⅴT_Zyb150")
+about:AddParagraph("Q群:303278685")
 about:AddParagraph("后期会更新 欢迎使用🥂")
 
+local about = Window:MakeTab({
+    Name = "数据",
+    Icon = "rbxassetid://15905575484",
+    PremiumOnly = false
+})
+
+about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
+about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
+about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
 local Tab = Window:MakeTab({
 	Name = "通用",
 	Icon = "rbxassetid://15905575484",
@@ -915,22 +925,32 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddButton({
+  Name = "菜单1",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/Ohio.lua", true))()
+
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").BankRobbery.BankCash.Main.CFrame
+-- Bank Tp 
+  end
+})
+
 Tab:AddButton({  
-    Name = "菜单1",
+    Name = "菜单2",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/ohio/main/Roblox232"))()
 	end
 })
 
 Tab:AddButton({  
-    Name = "菜单2",
+    Name = "菜单3",
 	Callback = function()
 	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\115\99\114\105\112\116\115\46\118\105\115\117\114\117\115\46\100\101\118\47\111\104\105\111\47\115\111\117\114\99\101"))()
 	end
 })
 
 Tab:AddButton({  
-    Name = "菜单3",
+    Name = "菜单4",
 	Callback = function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/1QCwNAXx"))()
 	end
@@ -1119,28 +1139,67 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "🥂俄亥俄州",
+	Name = "🥂战争大亨",
+	Icon = "rbxassetid://",
+	PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "自瞄",
+  Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
+  end
+})
+Tab:AddButton({
+  Name = "菜单1",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/megamoeus/UI-Engine-V2/main/OWTPublic"))()
+  end
+})
+Tab:AddButton({
+  Name = "菜单2",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SealboyDiscord/Ro-Flux/main/TW.lua"))()
+  end
+})
+
+local Tab = Window:MakeTab({
+	Name = "🥂鲨口求生",
 	Icon = "rbxassetid://",
 	PremiumOnly = false
 })
 Tab:AddButton({
   Name = "菜单1",
   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/Ohio.lua", true))()
-
-            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").BankRobbery.BankCash.Main.CFrame
--- Bank Tp 
+    loadstring(rawget(game:GetObjects("rbxassetid://3623753581"), 1).Source)("Pepsi Byte")loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/SharkBite.lua",true))()
   end
 })
 Tab:AddButton({
   Name = "菜单2",
   Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/rxn-xyz/Ohio./main/Ohio.lua",true))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Lolboxo/SharkBiteV3/main/SharkBiteV3.1'))()
   end
 })
 Tab:AddButton({
   Name = "菜单3",
   Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/hkvHeHed",true))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/YYVLbzVg", true))()
   end
 })
+
+local Tab = Window:MakeTab({
+	Name = "🥂鲨口求生2",
+	Icon = "rbxassetid://",
+	PremiumOnly = false
+})
+Tab:AddButton({
+  Name = "菜单1",
+  Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Lolboxo/SharkBiteV3/main/SharkBiteV3'))()
+  end
+})
+Tab:AddButton({
+  Name = "菜单2",
+  Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Lolboxo/SharkBiteV3/main/SharkBiteV3.1'))()
+  end
+}) 
