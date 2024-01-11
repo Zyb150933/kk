@@ -41,17 +41,14 @@ Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/nJJPrp2w"))()
 local Window = OrionLib:MakeWindow({Name = "🥂钢筋脚本🥂", HidePremium = false, IntroText = "🥂钢筋脚本🥂"})
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎使用"; Text ="🥂钢筋脚本🥂"; Duration = 4; })
-local about = Window:MakeTab({
-    Name = "公告",
-    Icon = "rbxassetid://15905575484",
-    PremiumOnly = false
+local player = Window:MakeTab({
+	Name = "主要",
+	Icon = "rbxassetid://15905575484",
+	PremiumOnly = false
 })
-
-about:AddParagraph("永远免费")
-about:AddParagraph("作者QQ:2279503203 🥂做断你的钢筋🥂 ")
-about:AddParagraph("作者游戏ID:TⅴT_Zyb150")
-about:AddParagraph("Q群:303278685")
-about:AddParagraph("后期会更新 欢迎使用🥂")
+player:AddParagraph("欢迎使用🥂钢筋脚本🥂","脚本永久免费")
+player:AddParagraph("作者Q","2279503203 🥂坐断你的钢筋🥂")
+player:AddParagraph("作者群聊","303278685")
 
 local about = Window:MakeTab({
     Name = "数据",
@@ -76,14 +73,14 @@ Tab:AddButton({
 })
  
  Tab:AddButton({
-  Name = "光影",
+  Name = "骂人无违规",
   Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/arzRCgwS"))()
+    loadstring(game:GetObjects("rbxassetid://1262435912")[1].Source)()
   end
 })
 
 Tab:AddButton({
-  Name = "光影2",
+  Name = "光影",
   Default = false,
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
@@ -788,7 +785,12 @@ Tab:AddButton({
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/AliCode14/scripts/main/ScriptHub.lua"))()
 	end
 })
-
+player:AddButton({ 
+	Name = "后期会更新，欢迎使用🥂",
+	Callback = function()
+	    
+	end
+})
 Tab:AddButton({  
     Name = "菜单2",
 	Callback = function()
@@ -825,6 +827,12 @@ local Tab = Window:MakeTab({
 	Name = "🥂极速传奇",
 	Icon = "rbxassetid://",
 	PremiumOnly = false
+})
+Tab:AddButton({ 
+	Name = "卡宠",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/uR6azdQQ"))()		
+  	end
 })
 
 Tab:AddButton({  
@@ -1203,3 +1211,34 @@ Tab:AddButton({
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Lolboxo/SharkBiteV3/main/SharkBiteV3.1'))()
   end
 }) 
+local player = Window:MakeTab({
+	Name = "🥂兵工厂",
+	Icon = "rbxassetid://",
+	PremiumOnly = false
+})
+
+player:AddButton({ 
+	Name = "菜单1",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/AstroPublic/arsenal/main/Arsenal-obfuscated.lua'))()
+  	end
+})
+
+player:AddButton({ 
+	Name = "菜单2",
+	Callback = function()
+      	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
+  	end
+})
+local player = Window:MakeTab({
+	Name = "🥂我的餐厅",
+	Icon = "rbxassetid://",
+	PremiumOnly = false
+})
+
+player:AddButton({ 
+	Name = "菜单",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafacasari/roblox-scripts/main/mr.lua"))()
+  	end
+})
