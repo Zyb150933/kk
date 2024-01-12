@@ -42,14 +42,14 @@ local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/nJJPrp2w"))()
 local Window = OrionLib:MakeWindow({Name = "🥂钢筋脚本🥂", HidePremium = false, IntroText = "🥂钢筋脚本🥂"})
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎使用"; Text ="🥂钢筋脚本🥂"; Duration = 4; })
 local player = Window:MakeTab({
-	Name = "主要",
+	Name = "公告",
 	Icon = "rbxassetid://15905575484",
 	PremiumOnly = false
 })
 player:AddParagraph("欢迎使用🥂钢筋脚本🥂","脚本永久免费")
-player:AddParagraph("作者Q","2279503203 🥂坐断你的钢筋🥂")
-player:AddParagraph("作者群聊","303278685")
-
+player:AddParagraph("2279503203 🥂坐断你的钢筋🥂","作者QQ")
+player:AddParagraph("303278685","作者群聊")
+player:AddParagraph("TⅴT_Zyb150","作者游戏ID")
 local about = Window:MakeTab({
     Name = "数据",
     Icon = "rbxassetid://15905575484",
@@ -1241,4 +1241,21 @@ player:AddButton({
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafacasari/roblox-scripts/main/mr.lua"))()
   	end
+})
+local player = Window:MakeTab({
+	Name = "🥂破坏者谜团2",
+	Icon = "rbxassetid://",
+	PremiumOnly = false
+})
+player:AddButton({ 
+	Name = "菜单1(会有点卡)",
+	Callback = function()
+	  loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script"),true))()
+	end
+})
+player:AddButton({ 
+	Name = "菜单2",
+	Callback = function()
+	  loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+	end
 })
