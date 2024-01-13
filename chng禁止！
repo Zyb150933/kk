@@ -1,3 +1,44 @@
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "正在启动",
+    Text = "请稍等",
+    Duration = 5,
+})
+wait(2)
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "你好",
+    Text = "感谢使用钢筋脚本",
+    Duration = 5,
+})
+wait(2)
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "作者",
+    Text = "🥂坐断你的钢筋🥂",
+    Duration = 5,
+})
+wait(2)
+print("Anti Afk On")
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		   wait(1)
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "反挂机已自动开启",
+    Text = "被踢出服务器的概率已降低",
+    Duration = 5,
+})
+wait(2)
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "启动成功",
+    Text = "您好"..game.Players.LocalPlayer.Name.."，欢迎使用🥂钢管脚本🥂",
+    Duration = 5,
+})
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
@@ -1063,7 +1104,12 @@ Tab:AddButton({
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Zyb150933/kk/main/.gitignore%E7%A6%81%E6%AD%A2%EF%BC%81'))()
   end
 })
-
+Tab:AddButton({
+  Name = "复制别人的船",
+  Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuild.txt"))()---https://discord.gg/HjNaYs6AnV discord
+  end
+})
 local Tab = Window:MakeTab({
 	Name = "🥂逃脱",
 	Icon = "rbxassetid://",
@@ -1198,6 +1244,15 @@ local Tab = Window:MakeTab({
 	Name = "🥂鲨口求生2",
 	Icon = "rbxassetid://",
 	PremiumOnly = false
+})
+Tab:AddDropdown({
+	Name = "选择你的免费船",
+	Default = "1",
+	Options = {"无", "DuckyBoatBeta", "DuckyBoat", "BlueCanopyMotorboat", "BlueWoodenMotorboat", "UnicornBoat", "Jetski", "RedMarlin", "Sloop", "TugBoat", "SmallDinghyMotorboat", "JetskiDonut", "Marlin", "TubeBoat", "FishingBoat", "VikingShip", "SmallWoodenSailboat", "RedCanopyMotorboat", "Catamaran", "CombatBoat", "TourBoat", "Duckmarine", "PartyBoat", "MilitarySubmarine", "GingerbreadSteamBoat", "Sleigh2022", "Snowmobile", "CruiseShip"},
+	Callback = function(Value)
+local ohString1 = (Value)
+game:GetService("ReplicatedStorage").EventsFolder.BoatSelection.UpdateHostBoat:FireServer(ohString1)
+	end 
 })
 Tab:AddButton({
   Name = "菜单1",
