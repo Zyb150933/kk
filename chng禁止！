@@ -7,13 +7,6 @@ CoreGui:SetCore("SendNotification", {
 wait(2)
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "你好",
-    Text = "感谢使用钢筋脚本",
-    Duration = 5,
-})
-wait(2)
-local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
     Title = "作者",
     Text = "🥂坐断你的钢筋🥂",
     Duration = 5,
@@ -36,7 +29,7 @@ wait(2)
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "启动成功",
-    Text = "您好"..game.Players.LocalPlayer.Name.."，欢迎使用🥂钢管脚本🥂",
+    Text = "您好"..game.Players.LocalPlayer.Name.."，欢迎使用   🥂钢管脚本🥂   ",
     Duration = 5,
 })
 local LBLG = Instance.new("ScreenGui", getParent)
@@ -81,7 +74,7 @@ Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/nJJPrp2w"))()
 local Window = OrionLib:MakeWindow({Name = "🥂钢筋脚本🥂", HidePremium = false, IntroText = "🥂钢筋脚本🥂"})
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "欢迎使用"; Text ="🥂钢筋脚本🥂"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "版本2.0"; Text ="🥂🥂"; Duration = 4; })
 local player = Window:MakeTab({
 	Name = "公告",
 	Icon = "rbxassetid://15905575484",
@@ -827,6 +820,12 @@ Tab:AddButton({
 	end
 })
 player:AddButton({ 
+	Name = "2.0版本",
+	Callback = function()
+	    
+	end
+})
+player:AddButton({ 
 	Name = "后期会更新，欢迎使用🥂",
 	Callback = function()
 	    
@@ -1110,6 +1109,12 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuild.txt"))()---https://discord.gg/HjNaYs6AnV discord
   end
 })
+Tab:AddButton({
+	Name = "工具包（可破别人团队模式空气墙）",
+	Callback = function()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()	
+  	end
+})
 local Tab = Window:MakeTab({
 	Name = "🥂逃脱",
 	Icon = "rbxassetid://",
@@ -1312,5 +1317,22 @@ player:AddButton({
 	Name = "菜单2",
 	Callback = function()
 	  loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+	end
+})
+local player = Window:MakeTab({
+	Name = "🥂自然灾害",
+	Icon = "rbxassetid://",
+	PremiumOnly = false
+})
+player:AddButton({ 
+	Name = "菜单1",
+	Callback = function()
+      loadstring(game:HttpGet("https://pastebin.com/raw/5fKvum70"))()
+    end
+})
+player:AddButton({ 
+	Name = "菜单2",
+	Callback = function()
+	  loadstring(game:HttpGet('https://raw.githubusercontent.com/9NLK7/93qjoadnlaknwldk/main/main'))()
 	end
 })
