@@ -1,1 +1,14 @@
-
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "很抱歉",
+    Text = "😐",
+    Duration = 5,
+})
+wait(2)
+local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "脚本现在已停运",
+    Text = "😐",
+    Duration = 5,
+})
+wait(2)
