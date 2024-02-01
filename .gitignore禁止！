@@ -1556,6 +1556,18 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddButton({
+  Name = "管理员",
+  Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dalloc2/Roblox/main/TigerAdmin.lua"))()
+  end
+})
+Tab:AddButton({
+  Name = "中文",
+  Callback = function()
+  loadstring(game:HttpGet("https://pastebin.com/raw/De4aYHDY"))()
+  end
+})
+Tab:AddButton({
   Name = "菜单1",
   Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
